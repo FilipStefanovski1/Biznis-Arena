@@ -588,10 +588,20 @@ body {
     rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* =====================
+     FIX: keep ticket cards aligned + stable
+     (prevents up/down "jumping")
+  ===================== */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 460px;
 }
 
+/* IMPORTANT: price cards should not translate on hover */
 .card.price:hover {
-  transform: translateY(-10px);
+  transform: none;
   box-shadow:
     0 30px 70px rgba(0, 0, 0, 0.55),
     inset 0 0 0 1px rgba(245, 180, 0, 0.35);
@@ -645,6 +655,9 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   border-radius: 0;
+
+  /* FIX: keeps buttons aligned at bottom across all tiers */
+  margin-top: auto;
 }
 
 /* Highlight middle (Regular) */
@@ -675,6 +688,7 @@ body {
 @media (max-width: 900px) {
   .card.price {
     padding: 32px 22px;
+    min-height: 0;
   }
 
   .card.price .price-row strong {
