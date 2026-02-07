@@ -793,3 +793,11 @@ body {
   color: var(--muted2);
   margin: 10px 0 16px;
 }
+
+/* =====================
+   EXPECT SECTION FIX
+   (prevents awkward last-row layout)
+===================== */
+#expect .cards {
+  grid-template-columns: repeat(3, 1fr);
+}
