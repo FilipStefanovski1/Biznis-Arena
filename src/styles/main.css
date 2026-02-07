@@ -826,3 +826,14 @@ body {
   display: block;
   padding: 10;
 }
+
+/* =====================
+   MAP EMBED (CONTAINER WIDTH)
+===================== */
+
+.map-embed {
+  width: 100%;
+  height: 480px;
+  border: 0;
+  display: block;
+}
