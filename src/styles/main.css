@@ -984,3 +984,371 @@ body {
 .faq-question:hover {
   background: rgba(255, 255, 255, 0.03);
 }
+
+/* =====================
+   FOOTER 1:1 REPLICA
+===================== */
+
+.footer-main {
+  background: #0b0b0b;
+  padding: 80px 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 80px;
+  padding-bottom: 60px;
+}
+
+/* Columns */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.ba-box {
+  background: #f5b400;
+  color: #000;
+  font-weight: 900;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.footer-title {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  font-size: 1rem;
+}
+
+.footer-title strong {
+  color: #f5b400;
+}
+
+/* Description */
+.footer-desc {
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  max-width: 320px;
+  margin-bottom: 26px;
+}
+
+/* Socials */
+.footer-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.social-circle {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.7rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.social-circle:hover {
+  border-color: #f5b400;
+  color: #f5b400;
+}
+
+/* Headings */
+.footer-heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.1em;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #f5b400;
+}
+
+/* Newsletter */
+.footer-subtext {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 14px;
+}
+
+.newsletter {
+  display: flex;
+  border: 1px solid rgba(255,255,255,0.15);
+  height: 46px;
+}
+
+.newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.newsletter input::placeholder {
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.08em;
+}
+
+.newsletter button {
+  width: 56px;
+  border: none;
+  background: transparent;
+  color: #f5b400;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.newsletter button:hover {
+  background: rgba(245,180,0,0.1);
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-legal a {
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.1em;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: #f5b400;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .footer-legal {
+    gap: 20px;
+  }
+}
+
+/* Logo image */
+.footer-logo img {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+/* Social SVG */
+.social-circle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Improve hover */
+.social-circle {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  transition: all 0.25s ease;
+}
+
+.social-circle:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  transform: translateY(-3px);
+}
+
+/* =====================
+   SPEAKERS SECTION
+===================== */
+
+.speakers {
+  background: #0b0b0b;
+}
+
+.speakers-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+.speakers-title {
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  font-weight: 950;
+  line-height: 0.95;
+  margin-top: 14px;
+}
+
+.speakers-all {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  transition: color 0.2s ease;
+}
+
+.speakers-all:hover {
+  color: var(--yellow);
+}
+
+/* GRID */
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+/* CARD */
+
+.speaker-card {
+  background: #111;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+}
+
+/* IMAGE */
+
+.speaker-img {
+  overflow: hidden;
+}
+
+.speaker-img img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.speaker-card:hover .speaker-img img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+/* INFO */
+
+.speaker-info {
+  padding: 22px;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.95)
+  );
+}
+
+.speaker-info h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.speaker-role {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 16px;
+}
+
+.speaker-connect {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  transition: color 0.25s ease;
+}
+
+.speaker-card:hover .speaker-connect {
+  color: var(--white);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .speakers-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .speaker-img img {
+    height: 300px;
+  }
+}
